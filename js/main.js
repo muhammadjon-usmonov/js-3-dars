@@ -12,23 +12,23 @@ elSurveyForm.addEventListener('submit', function(evt) {
 
     evt.preventDefault();
 
-    var firstFighter=elSurveyInput.value.trim();
+    var firstNumber=elSurveyInput.value.trim();
 
-    var secondFighter=elSurveySelect.value.trim();
+    var secondNumber=elSurveySelect.value.trim();
 
 
 
-    if (secondFighter=== 'usd'){
-        elSurveyResult.textContent=(firstFighter/valuta_usd).toFixed(7)+ " $";
+    if (secondNumber=== 'usd'){
+        elSurveyResult.textContent=(firstNumber/valuta_usd).toFixed(7)+ " $";
     }
 
-    if (secondFighter=== 'euro'){
-        elSurveyResult.textContent=(firstFighter/valuta_euro).toFixed(7)+ " euro";
+    if (secondNumber=== 'euro'){
+        elSurveyResult.textContent=(firstNumber/valuta_euro).toFixed(7)+ " euro";
 
     } 
 
-    if (secondFighter=== 'rubl'){
-        elSurveyResult.textContent=(firstFighter/valuta_rubl).toFixed(7)+ " rubl";
+    if (secondNumber=== 'rubl'){
+        elSurveyResult.textContent=(firstNumber/valuta_rubl).toFixed(7)+ " rubl";
       
     }
 
